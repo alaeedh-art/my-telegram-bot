@@ -1,10 +1,10 @@
 from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes
 
-TOKEN = "حط التوكن هنا"
+TOKEN = "PUT_YOUR_TOKEN_HERE"
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("هلا بيك 👋 البوت شغال")
+    await update.message.reply_text("Hello 👋 Bot is running")
 
 def main():
     app = Application.builder().token(TOKEN).build()
